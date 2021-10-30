@@ -5,33 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.6.1/font/bootstrap-icons.min.css">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" />
 
     <title>Document</title>
 
     <style>
-        body::before{
+        body::before {
             display: block;
             content: '';
             height: 60px;
 
         }
-        @media(min-width:768px){
-            .news-input{
+
+        @media(min-width:768px) {
+            .news-input {
                 width: 50%;
             }
         }
-        
-        .contact{
+
+        .contact {
             width: 80%;
             height: auto;
             margin: auto;
@@ -42,12 +43,12 @@
             background: #fff;
             box-shadow: 0px 0px 10px 0px #666;
         }
-        
-        .contact form{
+
+        .contact form {
             width: 100%;
             height: auto;
             flex: 50%;
-            
+
         }
 
         .table {
@@ -58,6 +59,7 @@
             border-radius: 10px;
             transition: all .3s ease 0s;
         }
+
         .table1 {
             padding-bottom: 20px;
             position: relative;
@@ -74,7 +76,7 @@
             font-weight: 600;
             position: relative;
             overflow: hidden;
-            
+
 
         }
 
@@ -86,7 +88,7 @@
             position: relative;
             overflow: hidden;
             color: #fff;
-            
+
 
         }
 
@@ -114,7 +116,7 @@
             color: #000;
             font-size: 16px;
             font-weight: 500;
-            
+
         }
 
         .content1 li {
@@ -123,10 +125,10 @@
             color: #fff;
             font-size: 16px;
             font-weight: 500;
-            
+
         }
 
-        
+
 
         .content li::before {
             content: "\f00c";
@@ -163,6 +165,7 @@
         .content li.disable {
             color: #707070 !important;
         }
+
         .content1 li.disable {
             color: #707070 !important;
         }
@@ -172,6 +175,7 @@
             color: #707070;
             border-color: #707070;
         }
+
         .content1 li.disable::before {
             content: "\f00d";
             color: #707070;
@@ -190,7 +194,7 @@
             text-decoration: none;
             transition: all .3s ease 0s;
             z-index: 1;
-            
+
         }
 
         .singup:hover {
@@ -198,10 +202,10 @@
             color: #06921d;
         }
 
-        .price-span{
+        .price-span {
 
-        
-            font-size:50px;
+
+            font-size: 50px;
             font-weight: 600;
             position: relative;
             overflow: hidden;
@@ -209,72 +213,108 @@
 
         }
 
-        .price1{
+        .price1 {
 
-        
-            
+
+
             color: #fff;
 
 
         }
 
+        .card-btn {
+            background-color: #93f1dd;
+            width: 30%;
+            text-decoration: none;
+            color: #000;
+        }
+
+        #card-img {
+
+            background: #93f1dd;
+            justify-content: center;
+            margin-left: 100px;
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
 
 
-        
-        
+        }
+
+        #head-btn {
+            display: inline-block;
+            padding: 10px 28px;
+            border-radius: 5px;
+            background-color: #d9fce7;
+            font-weight: normal;
+            font-weight: 600;
+            color: #00c894;
+
+        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-4 fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">logo</a>
+            <img src="logo.svg" alt="logo" width="50px" height="50px">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <!--<span class="navbar-toggler-icon"></span>-->
                 <i class="fas fa-stream navbar-toggler-icon"></i>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav  mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#explor">Explore Food</a>
+                        <a class="nav-link" href="#explor">Our Pricing</a>
                     </li>
-                    <li><button class="main-btn">Gets,start</button></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#explor">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#explor">How To</a>
+                    </li>
+
 
                 </ul>
 
+
             </div>
+
+            <button class=" btn main-btn justify-content-end" id="head-btn" style="
+                outline: none;">Gets,start</button>
         </div>
     </nav>
 
     <!--banner-->
 
-    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
 
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6">
-                    <h1>Become a <span class="text-warning">web developer</span> </h1>
+                    <p style="color:#850ee7">Simple HR Tool</p>
+                    <h1>A Simple Employee monitoring Software for your Business</h1>
                     <p class="lead my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vero
                         ipsa minus cum quos iusto. Aliquam libero deleniti quam quis ad unde quae veritatis beatae aut
                         exercitationem, molestiae totam.</p>
 
-                    <button class="btn btn-primary btn-lg my-4">
-                        Start the Enrollment
+                    <button class="btn btn-primary btn-lg my-4" style="background-color: #850ee7; color:#fff;">
+                        Gets,start
 
                     </button>
 
                 </div>
 
                 <div class="col-lg-6">
-                    <img class="img-fluid w-50" src="images/4.svg" alt="" srcset="">
+                    <img class="img-fluid w-50" src="1.svg" alt="" srcset="">
 
                 </div>
 
@@ -283,28 +323,28 @@
 
     </section>
 
-    <!--News letter-->
-    <section class="bg-primary text-light p-5">
-        <div class="container">
-            <div class="d-md-flex justify-content-between align-items-center">
-                <h3 class="mb-3 mb-md-0">Sign Up For Our Newsletter</h3>
-                <div class="input-group news-input">
-                    <input type="text" class="form-control" placeholder="Enter Email">
-                    <button class="btn btn-dark btn-lg" type="button">Send</button>
-                </div>
-            </div>
 
-        </div>
-    </section>
 
     <!--card-->
     <section class="p-5">
         <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-md-4 col-sm-3 ">
+                    <h2>Simple, Transparent Pricing Of <span style="color: #06921d;">2pm</span></h2>
+
+                </div>
+
+                <div class="col-md-6">
+                    <p class=>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolore impedit praesentium
+                        dignissimos rerum accusantium eaque maiores quis iure neque?</p>
+
+                </div>
+            </div>
             <div class="row text-center g-4">
                 <div class="col-md">
-                    <div class="card bg-dark text-light">
+                    <div class="card bg-light text-dark">
                         <div class="card-body text-center">
-                            <div class="h1">
+                            <div class="h1" id="card-img">
                                 <i class="bi bi-laptop"></i>
 
                             </div>
@@ -315,7 +355,7 @@
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, libero.
 
                             </p>
-                            <a href="#" class="btn btn-primary">Read more</a>
+                            <a href="#" class="card-btn">Read more</a>
 
                         </div>
 
@@ -323,10 +363,10 @@
 
                 </div>
                 <div class="col-md">
-                    <div class="card bg-dark text-light">
+                    <div class="card bg-light text-dark">
                         <div class="card-body text-center">
-                            <div class="h1">
-                                <i class="bi bi-laptop"></i>
+                            <div class="h1" id="card-img">
+                                <i class="bi bi-tv"></i>
 
                             </div>
                             <h3 class="card-title mb-3">
@@ -336,7 +376,7 @@
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, libero.
 
                             </p>
-                            <a href="#" class="btn btn-primary">Read more</a>
+                            <a href="#" class="card-btn">Read more</a>
 
                         </div>
 
@@ -344,10 +384,11 @@
 
                 </div>
                 <div class="col-md">
-                    <div class="card bg-dark text-light">
+                    <div class="card bg-light text-dark">
+
                         <div class="card-body text-center">
-                            <div class="h1">
-                                <i class="bi bi-laptop"></i>
+                            <div class="h1" id="card-img">
+                                <i class="bi bi-lock"></i>
 
                             </div>
                             <h3 class="card-title mb-3">
@@ -357,7 +398,29 @@
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, libero.
 
                             </p>
-                            <a href="#" class="btn btn-primary">Read more</a>
+                            <a href="#" class="card-btn">Read more</a>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark">
+                        <div class="card-body text-center">
+                            <div class="h1" id="card-img">
+                                <i class="bi bi-headset"></i>
+
+                            </div>
+                            <h3 class="card-title mb-3">
+                                virtual
+                            </h3>
+                            <p class="card-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, libero.
+
+                            </p>
+                            <a href="#" class="card-btn">Read more</a>
 
                         </div>
 
@@ -368,114 +431,101 @@
 
     </section>
 
-    <section id="learn" class="p-5">
+
+
+
+    <!--pricing card-->
+    <section id="pricing" class="pt-5 m-10"
+        style="background-image: linear-gradient(rgb(184, 215, 245), rgb(247, 226, 226));">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md">
-                    <img src="images/1.png" class="img-fluid"alt="">
-                </div>
-                <div class="col-md p-5">
-                    <h2>Learn The Fundamental</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolore impedit praesentium dignissimos rerum accusantium eaque maiores quis iure neque?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, cupiditate? Illo ipsum harum culpa nulla dolore aperiam est repudiandae aliquam, maiores assumenda tenetur impedit voluptatum iure suscipit aspernatur cupiditate! Delectus dolor earum porro aut repellendus, quasi magnam vel corrupti dolorum.</p>
-                    <a href="" class="btn btn-light mt-3"><i class="bi bi-chevron-right"></i>Read More</a>
+
+            <div class="row mt-5 mb-5">
+                <div class="col-md-6">
+                    <h2>Simple, Transparent Pricing Of <span style="color: #06921d;">2pm</span></h2>
+
                 </div>
 
+                <div class="col-md-6">
+                    <p class=>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolore impedit praesentium
+                        dignissimos rerum accusantium eaque maiores quis iure neque?</p>
+
+                </div>
             </div>
+            <div class="row m-5">
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="table">
+                        <h3 class="title ">Free</h3>
+
+                        <div class="price">
+                            $ <span class="price-span">0</span>
+                            /Month
+                        </div>
+                        <ul class="content">
+                            <li>Time Tracking</li>
+                            <li>Screenshot Monitoring</li>
+                            <li> 3 Screenshots Per Hour</li>
+                            <li>Sreenshots Stored For 2 Weeks</li>
+                            <li class="disable">Individual Setting</li>
+                            <li class="disable">Activitylevel Tracking</li>
+                            <li class="disable">Apps URL Tracking</li>
+                        </ul>
+                        <a href="#" class="singup">let's Start</a>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4 col-md-6 col-sm-6">
+                    <div class="table1">
+                        <h3 class="title1">Standard</h3>
+
+                        <div class="price1">
+                            $ <span class="price-span">3.99</span>
+                            /Month
+                        </div>
+                        <ul class="content1">
+                            <li>Time Tracking</li>
+                            <li>Screenshot Monitoring</li>
+                            <li> 3 Screenshots Per Hour</li>
+                            <li>Sreenshots Stored For 2 Weeks</li>
+                            <li>Individual Setting</li>
+                            <li>Activitylevel Tracking</li>
+                            <li class="disable">Apps URL Tracking</li>
+                        </ul>
+                        <a href="#" class="singup">let's Start</a>
+                    </div>
+                </div>
+
+                <div class=" col-lg-4 col-md-6 col-sm-6">
+                    <div class="table">
+                        <h3 class="title">Professionel</h3>
+
+                        <div class="price">
+                            $ <span class="price-span">5.99</span>
+                            /Month
+                        </div>
+                        <ul class="content">
+                            <li>Time Tracking</li>
+                            <li>Screenshot Monitoring</li>
+                            <li> 3 Screenshots Per Hour</li>
+                            <li>Sreenshots Stored For 2 Weeks</li>
+                            <li>Individual Setting</li>
+                            <li>Activitylevel Tracking</li>
+                            <li>Apps URL Tracking</li>
+                        </ul>
+                        <a href="#" class="singup">let's Start</a>
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
+
+
 
     </section>
 
-   <!--pricing card-->
-   <section id="pricing" class="pt-5 m-10" style="background-image: linear-gradient(rgb(184, 215, 245), rgb(247, 226, 226));">
-    <div class="container">
 
-        <div class="row mt-5 mb-5">
-            <div class="col-md-6">
-                <h2>Learn The Fundamental</h2>
-
-            </div>
-
-            <div class="col-md-6">
-                <p class=>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolore impedit praesentium dignissimos rerum accusantium eaque maiores quis iure neque?</p>
-                
-            </div>
-            </div>
-        <div class="row m-5">
-           
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="table">
-                    <h3 class="title ">Free</h3>
-
-                    <div class="price">
-                        $ <span class="price-span">0</span>
-                        /Month
-                    </div>
-                    <ul class="content">
-                        <li>Time Tracking</li>
-                        <li>Screenshot Monitoring</li>
-                        <li> 3 Screenshots Per Hour</li>
-                        <li>Sreenshots Stored For 2 Weeks</li>
-                        <li class="disable">Individual Setting</li>
-                        <li class="disable">Activitylevel Tracking</li>
-                        <li class="disable">Apps URL Tracking</li>
-                    </ul>
-                    <a href="#" class="singup">let's Start</a>
-                </div>
-            </div>
-
-            <div class=" col-lg-4 col-md-6 col-sm-6">
-                <div class="table1">
-                    <h3 class="title1">Standard</h3>
-
-                    <div class="price1">
-                        $ <span class="price-span">3.99</span>
-                        /Month
-                    </div>
-                    <ul class="content1">
-                        <li>Time Tracking</li>
-                        <li>Screenshot Monitoring</li>
-                        <li> 3 Screenshots Per Hour</li>
-                        <li>Sreenshots Stored For 2 Weeks</li>
-                        <li >Individual Setting</li>
-                        <li >Activitylevel Tracking</li>
-                        <li class="disable">Apps URL Tracking</li>
-                    </ul>
-                    <a href="#" class="singup">let's Start</a>
-                </div>
-            </div>
-
-            <div class=" col-lg-4 col-md-6 col-sm-6">
-                <div class="table">
-                    <h3 class="title">Professionel</h3>
-
-                    <div class="price">
-                        $ <span class="price-span">5.99</span>
-                        /Month
-                    </div>
-                    <ul class="content">
-                        <li>Time Tracking</li>
-                        <li>Screenshot Monitoring</li>
-                        <li> 3 Screenshots Per Hour</li>
-                        <li>Sreenshots Stored For 2 Weeks</li>
-                        <li >Individual Setting</li>
-                        <li >Activitylevel Tracking</li>
-                        <li >Apps URL Tracking</li>
-                    </ul>
-                    <a href="#" class="singup">let's Start</a>
-                </div>
-            </div>
-
-
-        </div>
-
-    </div>
-
-
-
-   </section>
-
-  
 
     </section>
 
@@ -487,29 +537,38 @@
                     <h2 class="text-center mb-4">Contact us</h2>
                     <form class="row g-3">
                         <div class="col-md-6">
-                          <label for="inputEmail4" class="form-label">Name</label>
-                          <input type="email" class="form-control" id="inputEmail4">
+
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="name">
                         </div>
                         <div class="col-md-6">
-                          <label for="inputPassword4" class="form-label">Email</label>
-                          <input type="password" class="form-control" id="inputPassword4">
+
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Email">
                         </div>
                         <div class="col-12">
-                            <label for="inputAddress" class="form-label">Phone</label>
-                            <input type="text" class="form-control" id="inputAddress" placeholder="">
+
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Phone">
+                        </div>
+
+                        <div class="mb-3">
+
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Message"></textarea>
                         </div>
 
                         <div class="col-12">
                             <button type="submit" class="btn btn-success">Send</button>
-                          </div>
- 
-                    
-                   
-                        
+                        </div>
+
+
+
+
                 </div>
                 <div class="col-md">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, vel, eveniet veniam possimus quae.</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.6586432004274!2d90.40938261408427!3d23.759549294345625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9050548f5df%3A0x62980312c253423b!2sRevo%20Interactive!5e0!3m2!1sen!2sbd!4v1634986225252!5m2!1sen!2sbd" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, vel, eveniet veniam possimus
+                        quae.</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.6586432004274!2d90.40938261408427!3d23.759549294345625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9050548f5df%3A0x62980312c253423b!2sRevo%20Interactive!5e0!3m2!1sen!2sbd!4v1634986225252!5m2!1sen!2sbd"
+                        width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 
 
@@ -518,18 +577,78 @@
     </section>
 
 
-  
-      <!--footer-->                  
 
-    <footer class="p-5 bg-dark text-white text-center position-relative">
-        <div class="container">
-            <p class="lead">Copyright &copy; 2021 Frontend Bootcamp</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h1"></i>
-            </a>
+    <!--footer-->
+
+
+    <footer class="bg-light text-dark pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <div class="col-mb-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                   <img src="logo.svg" alt="" height="100px" width="100px">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, iusto.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold ">USEFUL LINKS</h5>
+
+                    <p class="lead">
+                        <a href="#" class="text-dark" style="text-decoration: none;">About Product</a>
+                    </p>
+                    <p class="lead">
+                        <a href="#" class="text-dark" style="text-decoration: none;">Our Protfolio</a>
+                    </p>
+                    <p class="lead">
+                        <a href="#" class="text-dark" style="text-decoration: none;">ur Product</a>
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold ">QUICK LINKS</h5>
+
+                    <p class="lead">
+                        <a href="#" class="text-dark" style="text-decoration: none;">Privacy policy</a>
+                    </p>
+                    <p class="lead">
+                        <a href="#" class="text-dark" style="text-decoration: none;">Terms & Conditions</a>
+                    </p >
+                   
+
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold ">Contact</h5>
+
+                    <p class="lead ml-4">
+                        <i class="bi bi-house"></i> 357/10A-Modhubag,Mogbazar,Dhaka-1217 ,Bangladesh
+                        
+                    </p>
+                    <p class="lead ml-4">
+                        <i class="bi bi-envelope-open"></i> support@myshopfront.cloud
+                        
+                    </p>
+                   
+                </div>
+                <div class="row d-flex justify-content-start">
+                    <div>
+                        <p class="lead">
+                            2PM &copy; 202
+                            <a href="#" class="position-relative bottom-0 end-0 p-5">
+                                <i class="bi bi-arrow-up-circle h1"></i>
+                            </a>
+                        </p>
+                    </div>
+                    
+                </div>
+               
+
+            </div>
+           
+            
         </div>
-
+        
     </footer>
+
+   
 
 
 
@@ -537,7 +656,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -564,7 +683,7 @@
             }
         })
     </script>
-        
+
 </body>
 
 </html>
