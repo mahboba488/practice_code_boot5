@@ -19,6 +19,8 @@
     <title>Document</title>
 
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
         body::before {
             display: block;
             content: '';
@@ -229,17 +231,7 @@
             color: #000;
         }
 
-        #card-img {
-
-            background: #93f1dd;
-            justify-content: center;
-            margin-left: 100px;
-            border-radius: 50%;
-            height: 70px;
-            width: 70px;
-
-
-        }
+       
 
         #head-btn {
             display: inline-block;
@@ -251,6 +243,8 @@
             color: #00c894;
 
         }
+
+      
     </style>
 </head>
 
@@ -265,7 +259,7 @@
                 <i class="fas fa-stream navbar-toggler-icon"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav  mb-2 mb-lg-0">
+                <ul class="navbar-nav  mb-2 mb-lg-0" class="custom-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
@@ -329,7 +323,7 @@
     <section class="p-5">
         <div class="container">
             <div class="row mt-5 mb-5">
-                <div class="col-md-4 col-sm-3 ">
+                <div class="col-md-6 col-sm-3 ">
                     <h2>Simple, Transparent Pricing Of <span style="color: #06921d;">2pm</span></h2>
 
                 </div>
@@ -342,7 +336,7 @@
             </div>
             <div class="row text-center g-4">
                 <div class="col-md">
-                    <div class="card bg-light text-dark">
+                    <div class="card  text-dark">
                         <div class="card-body text-center">
                             <div class="h1" id="card-img">
                                 <i class="bi bi-laptop"></i>
@@ -363,7 +357,7 @@
 
                 </div>
                 <div class="col-md">
-                    <div class="card bg-light text-dark">
+                    <div class="card  text-dark">
                         <div class="card-body text-center">
                             <div class="h1" id="card-img">
                                 <i class="bi bi-tv"></i>
@@ -384,7 +378,7 @@
 
                 </div>
                 <div class="col-md">
-                    <div class="card bg-light text-dark">
+                    <div class="card  text-dark">
 
                         <div class="card-body text-center">
                             <div class="h1" id="card-img">
@@ -407,7 +401,7 @@
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="card bg-light text-dark">
+                    <div class="card  text-dark" >
                         <div class="card-body text-center">
                             <div class="h1" id="card-img">
                                 <i class="bi bi-headset"></i>
@@ -435,7 +429,7 @@
 
 
     <!--pricing card-->
-    <section id="pricing" class="pt-5 m-10"
+    <section id="pricing" class="pt-5 "
         style="background-image: linear-gradient(rgb(184, 215, 245), rgb(247, 226, 226));">
         <div class="container">
 
@@ -451,7 +445,7 @@
 
                 </div>
             </div>
-            <div class="row m-5">
+            <div class="row p-5">
 
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="table">
@@ -586,18 +580,18 @@
             <div class="row text-center text-md-left">
                 <div class="col-mb-3 col-lg-3 col-xl-3 mx-auto mt-3">
                    <img src="logo.svg" alt="" height="100px" width="100px">
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, iusto.</p>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, iusto.</p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold ">USEFUL LINKS</h5>
 
-                    <p class="lead">
+                    <p >
                         <a href="#" class="text-dark" style="text-decoration: none;">About Product</a>
                     </p>
-                    <p class="lead">
+                    <p>
                         <a href="#" class="text-dark" style="text-decoration: none;">Our Protfolio</a>
                     </p>
-                    <p class="lead">
+                    <p >
                         <a href="#" class="text-dark" style="text-decoration: none;">ur Product</a>
                     </p>
                 </div>
@@ -605,10 +599,10 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold ">QUICK LINKS</h5>
 
-                    <p class="lead">
+                    <p >
                         <a href="#" class="text-dark" style="text-decoration: none;">Privacy policy</a>
                     </p>
-                    <p class="lead">
+                    <p >
                         <a href="#" class="text-dark" style="text-decoration: none;">Terms & Conditions</a>
                     </p >
                    
@@ -618,11 +612,11 @@
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold ">Contact</h5>
 
-                    <p class="lead ml-4">
+                    <p class=" ml-4">
                         <i class="bi bi-house"></i> 357/10A-Modhubag,Mogbazar,Dhaka-1217 ,Bangladesh
                         
                     </p>
-                    <p class="lead ml-4">
+                    <p class=" ml-4">
                         <i class="bi bi-envelope-open"></i> support@myshopfront.cloud
                         
                     </p>
@@ -630,10 +624,10 @@
                 </div>
                 <div class="row d-flex justify-content-start">
                     <div>
-                        <p class="lead">
+                        <p >
                             2PM &copy; 202
                             <a href="#" class="position-relative bottom-0 end-0 p-5">
-                                <i class="bi bi-arrow-up-circle h1"></i>
+                                <i class="bi bi-arrow-up-circle h4" style="color: #00c894;"></i>
                             </a>
                         </p>
                     </div>
