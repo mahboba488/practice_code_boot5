@@ -19,21 +19,18 @@
     <title>Document</title>
 
     <style>
-
-        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
-        header{
-            
-            font-family:  sans-serif;
-            font-weight: 700;
-            box-sizing: border-box;
-            text-decoration: none;
-            list-style: none;
-            color: #00c894;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:wght@100;200;300;400;500;600;700;800&display=swap');
+        
         body::before {
             display: block;
             content: '';
             height: 95px;
+
+        }
+
+        body {
+            font-family: 'Barlow', sans-serif;
+
 
         }
 
@@ -46,10 +43,16 @@
           }
         
         @media(min-width:768px) {
-            .news-input {
-                width: 50%;
+           
+
+            .banner-img{
+                left:50px
             }
+
         }
+
+        
+        
 
         .contact {
             width: 80%;
@@ -151,36 +154,38 @@
 
         .content li::before {
             content: "\f00c";
-            height: 24px;
-            width: 24px;
+            height: 20px;
+            width: 20px;
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
             line-height: 20px;
             border-radius: 50%;
-            border: 2px solid #0c6313;
+            border: 2px solid #e5f9f3;
+            background: #e5f9f3;
             text-align: center;
             position: absolute;
             top: 50%;
             left: 12px;
             transform: translateY(-50%);
-            color: #06921d;
+            color: #16c997;
         }
 
         .content1 li::before {
             content: "\f00c";
-            height: 24px;
-            width: 24px;
+            height: 20px;
+            width: 20px;
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
             line-height: 20px;
             border-radius: 50%;
-            border: 2px solid #0c6313;
+            border: 2px solid #e5f9f3;
+            background: #e5f9f3;
             text-align: center;
             position: absolute;
             top: 50%;
             left: 12px;
             transform: translateY(-50%);
-            color: #06921d;
+            color: #16c997;
         }
 
         .content li.disable {
@@ -193,20 +198,20 @@
 
         .content li.disable::before {
             content: "\f00d";
-            color: #707070;
-            border-color: #707070;
+            color: #fc8686 ;
+            border-color: #feeeee;
         }
 
         .content1 li.disable::before {
             content: "\f00d";
-            color: #707070;
-            border-color: #707070;
+            color:#fc8686 ;
+            border-color: #feeeee;
         }
 
         .singup {
-            background: #06921d;
+            background: #02ab87;
             position: relative;
-            padding: 10px 40px;
+            padding: 15px 45px;
             font-size: 18px;
             font-weight: bold;
             border-radius: 30px;
@@ -244,7 +249,7 @@
         }
 
         .card-btn {
-            background-color: #93f1dd;
+            background-color: #ccefe7;
             width: 30%;
             text-decoration: none;
             color: #000;
@@ -254,31 +259,57 @@
 
         #head-btn {
             display: inline-block;
-            padding: 10px 28px;
-            border-radius: 5px;
-            background-color: #d9fce7;
+            padding: 15px 60px;
+            border-radius: 40px;
+            background-color: #02ab87;
+            font-size: larger;
+           
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 5px;
+
+        }
+
+        .contact-btn{
+
+            background-color: #02ab87;
+            color: #fff;
+            font-weight: 500;
+            padding: 18px 45px;
+            border-radius: 35px;
+            font-size: large;
+
+        }
+
+        #banner-btn {
+            display: inline-block;
+            padding: 15px 45px;
+            border-radius: 30px;
+            background-color: #645cfe;
             font-weight: normal;
             font-weight: 600;
-            color: #00c894;
+            color: #fff;
+            outline: none;
+           
 
         }
 
         #card-img{
    
-            background: #93f1dd;
+            background: #ccefe7;
             justify-content: center;
             margin:  10px auto;
             border-radius: 50%;
-            height: 60px;
-            width: 60px;
+            height: 70px;
+            width: 70px;
             opacity: 0.7;
            
           }
 
           #card-img i{
   
-            margin-left: 0px;
-            color: #00c894;
+            
+            color: #77d3bf;
           
           }
 
@@ -290,7 +321,53 @@
             
         }
 
-      
+        .banner{
+            background: #f5fbf8;
+            
+        }
+
+        .footer-custom{
+            background: #f9faff;
+        }
+        .nav-custom{
+            background: #f5fbf8;
+            font-size:20px;
+            font-weight:500;
+            margin-top: -10px;
+            padding: 5px;
+            color: #000;
+           
+
+
+        }
+
+        .nav-custom ul li:hover{
+            background-color: #aef3e4;
+            transition: all .9s;
+            color:#fff  !important;
+        }
+
+        
+
+
+        .nav-custom ul li{
+            margin: 5px;
+            padding: 5px;
+
+        }
+
+       
+
+        .card-custom p{
+            font-size: larger;
+            font-weight: 300;
+            line-height: 1.6rem;
+            color: #626263;
+        }
+
+      .banner-img{
+          left: -100px;
+      }
 
           
 
@@ -301,8 +378,8 @@
 </head>
 
 <body>
-    <header id="nav-header">
-    <nav class="navbar navbar-expand-lg bg-light navbar-light py-4 fixed-top ">
+    <header class="nav-header">
+    <nav class="navbar navbar-expand-lg nav-custom navbar-light  fixed-top ">
         <div class="container pt-5">
             <img src="logo.svg" alt="logo" width="50px" height="50px">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -312,7 +389,7 @@
                 <i class="fas fa-stream navbar-toggler-icon"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav  mb-2 mb-lg-0" class="custom-nav">
+                <ul class="navbar-nav  mb-2 nav-custom" >
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="#home">Home</a>
                     </li>
@@ -335,8 +412,8 @@
 
             </div>
 
-            <button class=" btn main-btn justify-content-end" id="head-btn" style="
-                outline: none;">Gets,start</button>
+            <button class=" btn main-btn justify-content-end" id="head-btn" 
+                >Get Started</button>
         </div>
     </nav>
 
@@ -344,26 +421,26 @@
 
     <!--banner-->
 
-    <section class="bg-light text-dark p-5 p-lg-0 pt-lg-5 mt-5  text-center text-sm-start">
+    <section class=" text-dark p-5 banner   text-center text-sm-start "  >
 
-        <div class="container">
+        <div class="container m-5">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6">
-                    <p style="color:#850ee7">Simple HR Tool</p>
+                    <p style="color:#645cfe;font-size:25px; font-weight:600">Simple HR Tool</p>
                     <h1>A Simple Employee monitoring Software for your Business</h1>
                     <p class="lead my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita natus vero
                         ipsa minus cum quos iusto. Aliquam libero deleniti quam quis ad unde quae veritatis beatae aut
                         exercitationem, molestiae totam.</p>
 
-                    <button class="btn btn-primary btn-lg my-4" style="background-color: #850ee7; color:#fff;">
-                        Gets,start
+                    <button class="btn btn-primary btn-lg my-4" id="banner-btn" >
+                        Request Free Trial
 
                     </button>
 
                 </div>
 
-                <div class="col-lg-6 ">
-                    <img class="img-fluid w-50" src="1.svg" alt="" srcset="">
+                <div class="col-lg-6 img-fluid banner-img  W-25">
+                    <img class="ms-5" src="1.svg" alt="" srcset="">
 
                 </div>
 
@@ -375,11 +452,11 @@
 
 
     <!--card-->
-    <section class="p-5">
+    <section class="p-5 m-5 card-custom">
         <div class="container">
             <div class="row mt-5 mb-5">
                 <div class="col-md-6 col-sm-3 ">
-                    <h2>Simple, Transparent Pricing Of <span style="color: #06921d;">2pm</span></h2>
+                    <h1>Simple, Transparent Pricing Of <span style="color: #06921d;">2pm</span></h1>
 
                 </div>
 
@@ -404,7 +481,7 @@
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, libero.
 
                             </p>
-                            <a href="#" class="card-btn">Read more</a>
+                            <a href="#" class="card-btn mb-5">Read more</a>
 
                         </div>
 
@@ -485,12 +562,12 @@
 
     <!--pricing card-->
     <section id="pricing" class="pt-5 mb-5"
-        style="background-image: linear-gradient(rgb(184, 215, 245), rgb(247, 226, 226));">
+        style="background-image: linear-gradient(#effefa, #fef4f3);">
         <div class="container">
 
             <div class="row mt-5 mb-5">
                 <div class="col-md-6">
-                    <h2>Simple, Transparent Pricing Of <span style="color: #06921d;">2pm</span></h2>
+                    <h1>Simple, Transparent Pricing Of <span style="color: #06921d;">2pm</span></h1>
 
                 </div>
 
@@ -500,36 +577,36 @@
 
                 </div>
             </div>
-            <div class="row ">
+            <div class="row mb-20">
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="table mb-5">
+                    <div class="table  text-start p-5 mb-5">
                         <h3 class="title ">Free</h3>
 
-                        <div class="price">
-                            $ <span class="price-span">0</span>
-                            /Month
+                        <div class="price ">
+                            $ <span class="price-span">0.00</span>
+                           / Limited to 3 users
                         </div>
                         <ul class="content">
                             <li>Time Tracking</li>
                             <li>Screenshot Monitoring</li>
-                            <li> 3 Screenshots Per Hour</li>
+                            <li> <span>3</span>Screenshots Per Hour</li>
                             <li>Sreenshots Stored For 2 Weeks</li>
-                            <li class="disable">Individual Setting</li>
-                            <li class="disable">Activitylevel Tracking</li>
-                            <li class="disable">Apps URL Tracking</li>
+                            <li class="disable text-decoration-line-through">Individual Setting</li>
+                            <li class="disable text-decoration-line-through">Activitylevel Tracking</li>
+                            <li class="disable text-decoration-line-through">Apps URL Tracking</li>
                         </ul>
-                        <a href="#" class="singup">let's Start</a>
+                        <a href="#" class="singup mt-3">Get Started</a>
                     </div>
                 </div>
 
                 <div class=" col-lg-4 col-md-6">
-                    <div class="table1 mb-5">
-                        <h3 class="title1">Standard</h3>
+                    <div class="table1 text-start p-5 ">
+                        <h3 class="title1 ">Standard</h3>
 
                         <div class="price1">
                             $ <span class="price-span">3.99</span>
-                            /Month
+                            /per user per month
                         </div>
                         <ul class="content1">
                             <li>Time Tracking</li>
@@ -538,19 +615,19 @@
                             <li>Sreenshots Stored For 2 Weeks</li>
                             <li>Individual Setting</li>
                             <li>Activitylevel Tracking</li>
-                            <li class="disable">Apps URL Tracking</li>
+                            <li class="disable text-decoration-line-through">Apps URL Tracking</li>
                         </ul>
-                        <a href="#" class="singup">let's Start</a>
+                        <a href="#" class="singup mt-3">Get Started</a>
                     </div>
                 </div>
 
                 <div class=" col-lg-4 col-md-6 ">
-                    <div class="table">
+                    <div class="table text-start p-5 ">
                         <h3 class="title">Professionel</h3>
 
                         <div class="price">
                             $ <span class="price-span">5.99</span>
-                            /Month
+                            /per user per month
                         </div>
                         <ul class="content">
                             <li>Time Tracking</li>
@@ -561,7 +638,7 @@
                             <li>Activitylevel Tracking</li>
                             <li>Apps URL Tracking</li>
                         </ul>
-                        <a href="#" class="singup">let's Start</a>
+                        <a href="#" class="singup mt-3">Get Started</a>
                     </div>
                 </div>
 
@@ -583,29 +660,33 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-md">
-                    <h2 class="text-center mb-4">Contact us</h2>
-                    <form class="row g-3">
-                        <div class="col-md-6">
+                    <h1 class="text-start mb-5">Contact  With Us</h1>
+                    <form class="row g-3 mb-3">
 
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="name">
-                        </div>
-                        <div class="col-md-6">
-
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Email">
-                        </div>
-                        <div class="col-12">
+                        <div class="col-12 mb-3">
 
                             <input type="text" class="form-control" id="inputAddress" placeholder="Phone">
                         </div>
 
-                        <div class="mb-3">
 
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                        <div class="col-md-6 mb-3">
+
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Email">
+                        </div>
+                        
+
+                        <div class="mb-3 mb-3">
+
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
                                 placeholder="Message"></textarea>
                         </div>
 
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-success">Send</button>
+                        <div class="col-12 mb-3">
+                            <button type="submit" class="btn btn-success contact-btn">Send</button>
                         </div>
 
 
@@ -617,7 +698,7 @@
                         quae.</p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.6586432004274!2d90.40938261408427!3d23.759549294345625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9050548f5df%3A0x62980312c253423b!2sRevo%20Interactive!5e0!3m2!1sen!2sbd!4v1634986225252!5m2!1sen!2sbd"
-                        width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        width="100%" height="330" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 
 
@@ -630,7 +711,7 @@
     <!--footer-->
 
 
-    <footer class="bg-light text-dark pt-5 pb-4">
+    <footer class="footer-custom text-dark pt-5 pb-4">
         <div class="container text-center text-md-left">
             <div class="row text-center text-md-left">
                 <div class="col-mb-3 col-lg-3 col-xl-3 mx-auto mt-3">
@@ -677,17 +758,7 @@
                     </p>
                    
                 </div>
-                <div class="row d-flex justify-content-start">
-                    <div>
-                        <p >
-                            2PM &copy; 202
-                            <a href="#" class="position-relative bottom-0 end-0 p-5">
-                                <i class="bi bi-arrow-up-circle h4" style="color: #00c894;"></i>
-                            </a>
-                        </p>
-                    </div>
-                    
-                </div>
+                
                
 
             </div>
@@ -696,6 +767,20 @@
         </div>
         
     </footer>
+
+    <div class="row d-flex text-start ms-5 ps-5 pt-2">
+        <div>
+            <p class="lead">
+               
+               
+                Copyright &copy; 2021 2pm All Rights Reserved 
+                <a href="#" class="position-relative ">
+                    <i class="bi bi-arrow-up-circle h4 justify-content-end" style="color: #00c894;"></i>
+                </a>
+            </p>
+        </div>
+        
+    </div>
 
    
 
