@@ -16,11 +16,13 @@
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Document</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow:wght@100;200;300;400;500;600;700;800&display=swap');
-        
+
         body::before {
             display: block;
             content: '';
@@ -36,23 +38,23 @@
 
 
         :active,
-          :hover,
-          :focus{
-              outline:0 !important;
-              outline-offset: 0;
-          }
-        
-        @media(min-width:768px) {
-           
+        :hover,
+        :focus {
+            outline: 0 !important;
+            outline-offset: 0;
+        }
 
-            .banner-img{
-                left:50px
+        @media(min-width:768px) {
+
+
+            .banner-img {
+                left: 50px
             }
 
         }
 
-        
-        
+
+
 
         .contact {
             width: 80%;
@@ -198,13 +200,13 @@
 
         .content li.disable::before {
             content: "\f00d";
-            color: #fc8686 ;
+            color: #fc8686;
             border-color: #feeeee;
         }
 
         .content1 li.disable::before {
             content: "\f00d";
-            color:#fc8686 ;
+            color: #fc8686;
             border-color: #feeeee;
         }
 
@@ -253,9 +255,11 @@
             width: 30%;
             text-decoration: none;
             color: #000;
+            padding: 5px;
+            margin-top: 10px;
         }
 
-       
+
 
         #head-btn {
             display: inline-block;
@@ -263,14 +267,14 @@
             border-radius: 40px;
             background-color: #02ab87;
             font-size: larger;
-           
+
             font-weight: 600;
             color: #fff;
             margin-bottom: 5px;
 
         }
 
-        .contact-btn{
+        .contact-btn {
 
             background-color: #02ab87;
             color: #fff;
@@ -278,6 +282,7 @@
             padding: 18px 45px;
             border-radius: 35px;
             font-size: large;
+           
 
         }
 
@@ -290,140 +295,171 @@
             font-weight: 600;
             color: #fff;
             outline: none;
-           
+
 
         }
 
-        #card-img{
-   
+        #card-img {
+
             background: #ccefe7;
             justify-content: center;
-            margin:  10px auto;
+            margin: 20px auto;
             border-radius: 50%;
-            height: 70px;
-            width: 70px;
+            height: 65px;
+            width: 65px;
             opacity: 0.7;
-           
-          }
 
-          #card-img i{
-  
-            
+        }
+
+        #card-img i {
+
+
             color: #77d3bf;
-          
-          }
+            
+
+        }
 
         .custom-card-body{
+            border: ffffff
+        }
+
+        .custom-card-body:hover {
             border: #fff;
-           
-           box-sizing: border-box;
-           box-shadow: 1px 1px 1px 1px #f1f3f5;
-            
+
+            box-sizing: border-box;
+            box-shadow: 1px 1px 1px 1px #f1f3f5;
+
         }
 
-        .banner{
+        .banner {
             background: #f5fbf8;
-            
+
         }
 
-        .footer-custom{
+        .footer-custom {
             background: #f9faff;
         }
-        .nav-custom{
+
+        .nav-custom {
             background: #f5fbf8;
-            font-size:20px;
-            font-weight:500;
+            font-size: 20px;
+            font-weight: 500;
             margin-top: -10px;
             padding: 5px;
             color: #000;
-           
+
 
 
         }
 
-        .nav-custom ul li:hover{
+        .nav-custom ul li:hover {
             background-color: #aef3e4;
             transition: all .9s;
-            color:#fff  !important;
+            color: #fff !important;
         }
 
-        
 
 
-        .nav-custom ul li{
+
+        .nav-custom ul li {
             margin: 5px;
             padding: 5px;
 
         }
 
-       
 
-        .card-custom p{
+
+        .card-custom p {
             font-size: larger;
             font-weight: 300;
             line-height: 1.6rem;
             color: #626263;
         }
 
-      .banner-img{
-          left: -100px;
-      }
+        .banner-img {
+            left: -100px;
+        }
 
-          
+        #banner-custom h1{
+            font-size: 50px;
+            font-weight: 800;
 
-        
+        }
 
-      
+        #banner-custom p{
+            font-size: 25px;
+            font-weight: 500;
+        }
+
+        #custom-h1{
+
+            font-size: 65px;
+            font-weight: 600;
+
+        }
+
+        .custom-text{
+            font-size: 20px;
+            font-weight: 500px;
+            color: rgb(105, 103, 103);
+        }
+        .form-control{
+            border-color: rgb(238, 236, 236);
+        }
+
+        .form-control:focus {
+            border-color: #28a745;
+            box-shadow: 0 0 0 0.01rem rgba(40, 167, 69, 0.25);
+        } 
     </style>
 </head>
 
 <body>
     <header class="nav-header">
-    <nav class="navbar navbar-expand-lg nav-custom navbar-light  fixed-top ">
-        <div class="container pt-5">
-            <img src="logo.svg" alt="logo" width="50px" height="50px">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <!--<span class="navbar-toggler-icon"></span>-->
-                <i class="fas fa-stream navbar-toggler-icon"></i>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav  mb-2 nav-custom" >
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#explor">Our Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#explor">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#explor">How To</a>
-                    </li>
+        <nav class="navbar navbar-expand-lg nav-custom navbar-light  fixed-top ">
+            <div class="container pt-5">
+                <img src="logo.svg" alt="logo" width="50px" height="50px">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!--<span class="navbar-toggler-icon"></span>-->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav  mb-2 nav-custom">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#explor">Our Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#explor">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#explor">How To</a>
+                        </li>
 
 
-                </ul>
+                    </ul>
 
 
+                </div>
+
+                <button class=" btn main-btn justify-content-end" id="head-btn">Get Started</button>
             </div>
+        </nav>
 
-            <button class=" btn main-btn justify-content-end" id="head-btn" 
-                >Get Started</button>
-        </div>
-    </nav>
-
-</header>
+    </header>
 
     <!--banner-->
 
-    <section class=" text-dark p-5 banner   text-center text-sm-start "  >
+    <section class=" text-dark p-5 banner   text-center text-sm-start ">
 
-        <div class="container m-5">
+        <div class="container m-5" id="banner-custom">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6">
                     <p style="color:#645cfe;font-size:25px; font-weight:600">Simple HR Tool</p>
@@ -432,17 +468,21 @@
                         ipsa minus cum quos iusto. Aliquam libero deleniti quam quis ad unde quae veritatis beatae aut
                         exercitationem, molestiae totam.</p>
 
-                    <button class="btn btn-primary btn-lg my-4" id="banner-btn" >
+                    <button class="btn btn-primary btn-lg my-4" id="banner-btn">
                         Request Free Trial
 
                     </button>
 
                 </div>
 
-                <div class="col-lg-6 img-fluid banner-img  W-25">
-                    <img class="ms-5" src="1.svg" alt="" srcset="">
-
+              
+                    <div class="col-lg-6 img-fluid banner-img  W-25" >
+                        <img class="ms-5" src="1.svg" alt="" srcset="">
+    
+                    </div>
                 </div>
+
+                
 
             </div>
         </div>
@@ -456,12 +496,13 @@
         <div class="container">
             <div class="row mt-5 mb-5">
                 <div class="col-md-6 col-sm-3 ">
-                    <h1>Simple, Transparent Pricing Of <span style="color: #06921d;">2pm</span></h1>
+                    <h1 id="custom-h1">Why Should You
+                        Choose  <span style="color: #02ad88;">2pm.</span></h1>
 
                 </div>
 
                 <div class="col-md-6">
-                    <p class=>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolore impedit praesentium
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolore impedit praesentium
                         dignissimos rerum accusantium eaque maiores quis iure neque?</p>
 
                 </div>
@@ -475,7 +516,7 @@
 
                             </div>
                             <h3 class="card-title mb-3">
-                                virtual
+                                Latest Technology
                             </h3>
                             <p class="card-text">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, libero.
@@ -496,7 +537,7 @@
 
                             </div>
                             <h3 class="card-title mb-3">
-                                virtual
+                                Security included
                             </h3>
                             <p class="card-text">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, libero.
@@ -518,7 +559,7 @@
 
                             </div>
                             <h3 class="card-title mb-3">
-                                virtual
+                                Desktop App
                             </h3>
                             <p class="card-text">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, libero.
@@ -533,14 +574,14 @@
                     </div>
                 </div>
                 <div class="col-md">
-                    <div class="card  text-dark custom-card-body" >
+                    <div class="card  text-dark custom-card-body">
                         <div class="card-body text-center ">
                             <div class="h1" id="card-img">
                                 <i class="bi bi-headset"></i>
 
                             </div>
                             <h3 class="card-title mb-3">
-                                virtual
+                                Customer Support
                             </h3>
                             <p class="card-text">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, libero.
@@ -561,18 +602,17 @@
 
 
     <!--pricing card-->
-    <section id="pricing" class="pt-5 mb-5"
-        style="background-image: linear-gradient(#effefa, #fef4f3);">
+    <section id="pricing" class="pt-5 mb-5" style="background-image: linear-gradient(#effefa, #fef4f3);">
         <div class="container">
 
             <div class="row mt-5 mb-5">
                 <div class="col-md-6">
-                    <h1>Simple, Transparent Pricing Of <span style="color: #06921d;">2pm</span></h1>
+                    <h1 id="custom-h1">Simple, Transparent Pricing Of <span style="color: #02ad88;">2pm</span></h1>
 
                 </div>
 
                 <div class="col-md-6">
-                    <p class=>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolore impedit praesentium
+                    <p class="custom-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolore impedit praesentium
                         dignissimos rerum accusantium eaque maiores quis iure neque?</p>
 
                 </div>
@@ -585,7 +625,7 @@
 
                         <div class="price ">
                             $ <span class="price-span">0.00</span>
-                           / Limited to 3 users
+                            / Limited to 3 users
                         </div>
                         <ul class="content">
                             <li>Time Tracking</li>
@@ -660,29 +700,29 @@
         <div class="container">
             <div class="row g-4">
                 <div class="col-md">
-                    <h1 class="text-start mb-5">Contact  With Us</h1>
+                    <h1 class="text-start mb-5">Contact With Us</h1>
                     <form class="row g-3 mb-3">
 
                         <div class="col-12 mb-3">
 
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Phone">
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Full Name">
                         </div>
 
 
                         <div class="col-md-6 mb-3">
 
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="name">
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                         </div>
                         <div class="col-md-6 mb-3">
 
-                            <input type="password" class="form-control" id="inputPassword4" placeholder="Email">
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Your Phone">
                         </div>
-                        
+
 
                         <div class="mb-3 mb-3">
 
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
-                                placeholder="Message"></textarea>
+                                placeholder="Give Us More Details"></textarea>
                         </div>
 
                         <div class="col-12 mb-3">
@@ -694,7 +734,7 @@
 
                 </div>
                 <div class="col-md">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, vel, eveniet veniam possimus
+                    <p class="custom-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, vel, eveniet veniam possimus
                         quae.</p>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.6586432004274!2d90.40938261408427!3d23.759549294345625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9050548f5df%3A0x62980312c253423b!2sRevo%20Interactive!5e0!3m2!1sen!2sbd!4v1634986225252!5m2!1sen!2sbd"
@@ -715,19 +755,19 @@
         <div class="container text-center text-md-left">
             <div class="row text-center text-md-left">
                 <div class="col-mb-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                   <img src="logo.svg" alt="" height="100px" width="100px">
-                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, iusto.</p>
+                    <img src="logo.svg" alt="" height="100px" width="100px">
+                    <p class="custom-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, iusto.</p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold ">USEFUL LINKS</h5>
 
-                    <p >
+                    <p class="custom-text">
                         <a href="#" class="text-dark" style="text-decoration: none;">About Product</a>
                     </p>
-                    <p>
+                    <p class="custom-text">
                         <a href="#" class="text-dark" style="text-decoration: none;">Our Protfolio</a>
                     </p>
-                    <p >
+                    <p class="custom-text">
                         <a href="#" class="text-dark" style="text-decoration: none;">ur Product</a>
                     </p>
                 </div>
@@ -735,60 +775,62 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold ">QUICK LINKS</h5>
 
-                    <p >
+                    <p class="custom-text">
                         <a href="#" class="text-dark" style="text-decoration: none;">Privacy policy</a>
                     </p>
-                    <p >
+                    <p class="custom-text">
                         <a href="#" class="text-dark" style="text-decoration: none;">Terms & Conditions</a>
-                    </p >
-                   
+                    </p>
+
 
                 </div>
 
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5 class="text-uppercase mb-4 font-weight-bold ">Contact</h5>
 
-                    <p class=" ml-4">
+                    <p class=" ms-4 custom-text">
                         <i class="bi bi-house"></i> 357/10A-Modhubag,Mogbazar,Dhaka-1217 ,Bangladesh
-                        
+
                     </p>
-                    <p class=" ml-4">
+                    <p class=" ms-4 custom-text">
                         <i class="bi bi-envelope-open"></i> support@myshopfront.cloud
-                        
+
                     </p>
-                   
+
                 </div>
-                
-               
+
+
 
             </div>
-           
-            
+
+
         </div>
-        
+
     </footer>
 
     <div class="row d-flex text-start ms-5 ps-5 pt-2">
         <div>
             <p class="lead">
-               
-               
-                Copyright &copy; 2021 2pm All Rights Reserved 
+
+
+                Copyright &copy; 2021 2pm All Rights Reserved
                 <a href="#" class="position-relative ">
                     <i class="bi bi-arrow-up-circle h4 justify-content-end" style="color: #00c894;"></i>
                 </a>
             </p>
         </div>
-        
+
     </div>
 
-   
+
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+  
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
